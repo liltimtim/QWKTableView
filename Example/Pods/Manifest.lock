@@ -1,0 +1,16 @@
+PODS:
+  - QWKTableView (0.1.0)
+
+DEPENDENCIES:
+  - QWKTableView (from `../`)
+
+EXTERNAL SOURCES:
+  QWKTableView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QWKTableView: fb4f52bdca0f68b0c401fe89d3922f56e1a98ce4
+
+PODFILE CHECKSUM: bd994dc9ea7eac8368740be845572f2eafa5abbd
+
+COCOAPODS: 1.3.1

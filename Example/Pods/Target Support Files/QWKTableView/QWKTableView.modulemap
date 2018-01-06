@@ -1,0 +1,6 @@
+framework module QWKTableView {
+  umbrella header "QWKTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
