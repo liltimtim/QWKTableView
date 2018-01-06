@@ -1,0 +1,6 @@
+use_frameworks!
+target 'QWKTableView_Tests' do
+  pod 'QWKTableView', :path => '../'
+  
+  
+end
