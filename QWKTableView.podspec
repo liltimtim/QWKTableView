@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint QWKTableView.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'QWKTableView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QWKTableView.'
+  s.summary          = 'Easy to use table views'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +10,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+QWKTableView includes the components needed to setup and display cells in a table view.  Its designed to rapidly get data displaying into a table view.  More advanced table operations is not recommended for this library however you can extend any aspect.
                        DESC
 
   s.homepage         = 'https://github.com/liltimtim/QWKTableView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liltimtim' => 'liltimtim@gmail.com' }
   s.source           = { :git => 'https://github.com/liltimtim/QWKTableView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'QWKTableView/Classes/**/*'
   
