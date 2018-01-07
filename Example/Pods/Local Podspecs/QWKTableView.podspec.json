@@ -1,8 +1,8 @@
 {
   "name": "QWKTableView",
   "version": "0.1.0",
-  "summary": "A short description of QWKTableView.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Easy to use table views",
+  "description": "QWKTableView includes the components needed to setup and display cells in a table view.  Its designed to rapidly get data displaying into a table view.  More advanced table operations is not recommended for this library however you can extend any aspect.",
   "homepage": "https://github.com/liltimtim/QWKTableView",
   "license": {
     "type": "MIT",
@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "QWKTableView/Classes/**/*"
 }
