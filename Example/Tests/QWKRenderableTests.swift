@@ -22,7 +22,6 @@ class MockModel: NSObject, QWKRenderable {
     
     var object: AnyObject = String("hello") as AnyObject
     
-    
 }
 
 class MockCell: UITableViewCell, QWKReusableCell {

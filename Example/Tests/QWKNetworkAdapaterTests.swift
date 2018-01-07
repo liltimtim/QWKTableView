@@ -12,6 +12,7 @@ class QWKNetworkAdapaterTests: XCTestCase {
     
     func testSetupNetworkAdapater() {
         let mock = MockNetworkAdapater()
+        (mock as? MockNetworkAdapater)?.mockItems = [AnyObject]()
         mock.fetch(success: { (objects) in
             XCTAssertEqual(objects.count, 0)
         }) { (err) in
