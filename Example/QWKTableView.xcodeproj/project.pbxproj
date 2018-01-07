@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D172053200187600077C110 /* QWKTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D172052200187600077C110 /* QWKTableTests.swift */; };
+		5D1720572001AAE20077C110 /* QWKNetworkAdapaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1720562001AAE20077C110 /* QWKNetworkAdapaterTests.swift */; };
+		5D1720592001ABA40077C110 /* QWKRenderableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1720582001ABA40077C110 /* QWKRenderableTests.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		CFC927C0A22CE07454B5123D /* Pods_QWKTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB1D8EA03CFBFF29B8DF8E7 /* Pods_QWKTableView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05E3567244A7966BD4D1DE54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2C811BDFB06662AD39E6DC1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		05E3567244A7966BD4D1DE54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2C811BDFB06662AD39E6DC1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		44B1C08D1E9D21BBC0D32FCE /* Pods-QWKTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWKTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QWKTableView_Tests/Pods-QWKTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5D172052200187600077C110 /* QWKTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWKTableTests.swift; sourceTree = "<group>"; };
+		5D1720562001AAE20077C110 /* QWKNetworkAdapaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWKNetworkAdapaterTests.swift; sourceTree = "<group>"; };
+		5D1720582001ABA40077C110 /* QWKRenderableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWKRenderableTests.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* QWKTableView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QWKTableView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6BB1D8EA03CFBFF29B8DF8E7 /* Pods_QWKTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QWKTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5EE831D7603F431F2368E08 /* QWKTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QWKTableView.podspec; path = ../QWKTableView.podspec; sourceTree = "<group>"; };
+		A5EE831D7603F431F2368E08 /* QWKTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QWKTableView.podspec; path = ../QWKTableView.podspec; sourceTree = "<group>"; };
 		DF6863254812F2419D33E15C /* Pods-QWKTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QWKTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QWKTableView_Tests/Pods-QWKTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +80,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5D1720582001ABA40077C110 /* QWKRenderableTests.swift */,
+				5D1720562001AAE20077C110 /* QWKNetworkAdapaterTests.swift */,
+				5D172052200187600077C110 /* QWKTableTests.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -131,10 +140,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -229,6 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D172053200187600077C110 /* QWKTableTests.swift in Sources */,
+				5D1720592001ABA40077C110 /* QWKRenderableTests.swift in Sources */,
+				5D1720572001AAE20077C110 /* QWKNetworkAdapaterTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

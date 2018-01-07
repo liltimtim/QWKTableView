@@ -8,12 +8,16 @@
 import Foundation
 import UIKit
 
-public extension UITableView {
-    public func registerReusableCell<T: UITableViewCell>(_: T.Type) where T: QWKReusable {
+extension UITableView {
+    open func registerReusableCell<T: QWKReusableCell>(_: T.Type) {
         if let nib = T.nib {
             self.register(nib, forCellReuseIdentifier: T.reuseIdentifier)
         } else {
             self.register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
         }
+    }
+    
+    open func dequeueReusableCell<T: QWKReusableCell>(indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as! T
     }
 }
