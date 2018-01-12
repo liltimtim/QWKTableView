@@ -4,12 +4,14 @@
 //
 //  Created by Timothy Dillman on 1/6/18.
 //
-//  Used to conform Data Models to inform the table what cell should be displayed for this particular data model.  Sits as a layer between the model and the table view
-//  Acts as an "adapter" for the model telling / asking the table to display the particular cell for the particular model. 
+//  Used as a data adapter for dispensing cells to the table view and adapting the data appropriately
 import Foundation
 
 public protocol QWKRenderable: class {
+    var object:AnyObject! { get set }
+    
     /** set property to have the data model render out the cell */
-    static var displayTableCell: QWKReusableCell.Type { get }
-    var object:AnyObject { get set }
+    init(object: AnyObject)
+    
+    func cellInstance(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
 }

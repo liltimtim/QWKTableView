@@ -10,22 +10,29 @@ import XCTest
 import QWKTableView
 class QWKRenderableTests: XCTestCase {
     func testSetupRenderableObject() {
-        let o = MockModel()
-        dump(MockModel.displayTableCell)
-        XCTAssertEqual(o.object as? String, "hello")
-    }
-}
-
-class MockModel: NSObject, QWKRenderable {
-    
-    static var displayTableCell: QWKReusableCell.Type { return MockCell.self }
-    
-    var object: AnyObject = String("hello") as AnyObject
-    
-}
-
-class MockCell: UITableViewCell, QWKReusableCell {
-    func set(withModel model: AnyObject) {
         
     }
+}
+
+class MockDataModel: NSObject {
+    var sampleProperty: String = "Sample"
+}
+
+class MockAdapterItem: NSObject, QWKRenderable {
+    var object: AnyObject!
+    
+    required init(object: AnyObject) {
+        self.object = object
+    }
+    
+    func cellInstance(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell:MockCell = tableView.dequeueReusableCell(indexPath: indexPath)
+        cell.textLabel?.text = (object as? MockDataModel)?.sampleProperty
+        return cell
+    }
+    
+}
+
+class MockCell: UITableViewCell, QWKReusable {
+    static var reuseIdentifier: String { return String(describing: MockCell.self) }
 }

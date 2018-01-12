@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    open func registerReusableCell<T: QWKReusableCell>(_: T.Type) {
+    open func registerReusableCell<T: QWKReusable>(_: T.Type) {
         if let nib = T.nib {
             self.register(nib, forCellReuseIdentifier: T.reuseIdentifier)
         } else {
@@ -17,7 +17,7 @@ extension UITableView {
         }
     }
     
-    open func dequeueReusableCell<T: QWKReusableCell>(indexPath: IndexPath) -> T {
+    open func dequeueReusableCell<T: QWKReusable>(indexPath: IndexPath) -> T {
         return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as! T
     }
 }
