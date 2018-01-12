@@ -17,7 +17,7 @@ public protocol QWKTableEmittable: class, QWKTableEmittableError {
 }
 
 public protocol QWKTable: class, UITableViewDelegate, UITableViewDataSource, QWKTableEmittableError {
-    var data: [AnyObject] { get set }
+    var data: [QWKRenderable] { get set }
     var network: QWKTableNetworkAdapter? { get set }
     weak var delegate: QWKTableEmittable? { get set }
     weak var tableView: UITableView? { get set }

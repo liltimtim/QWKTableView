@@ -10,7 +10,7 @@ class Tests: XCTestCase {
     
 }
 
-class TestReusableCell: QWKReusableCell {
-    func set(withModel model: AnyObject) { }
+class TestReusableCell: UITableViewCell, QWKReusable {
+    static var reuseIdentifier: String { return String(describing: TestReusableCell.self) }
 }
 
