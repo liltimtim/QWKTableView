@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol QWKTableNetworkAdapter: class {
-    func fetch(success: (_ objects:[AnyObject])->Void, error: (_ err: Error)->Void)
+    func fetch(success: (_ objects:[QWKRenderable])->Void, error: (_ err: Error)->Void)
 }
