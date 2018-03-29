@@ -10,7 +10,11 @@ import XCTest
 import QWKTableView
 class QWKRenderableTests: XCTestCase {
     func testSetupRenderableObject() {
-        
+        let model = MockAdapterItem(object: MockDataModel())
+        let table = UITableView()
+        table.registerReusableCell(MockCell.self)
+        let cell = model.cellInstance(tableView: table, indexPath: IndexPath.init(row: 0, section: 0))
+        XCTAssertEqual(cell.textLabel?.text, (model.object as? MockDataModel)?.sampleProperty)
     }
 }
 
